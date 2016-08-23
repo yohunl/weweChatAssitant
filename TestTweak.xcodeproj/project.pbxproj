@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		098DA9A91D658511008608A7 /* TestTweak.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 098DA9A81D658511008608A7 /* TestTweak.h */; };
-		098DA9AB1D658511008608A7 /* TestTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 098DA9AA1D658511008608A7 /* TestTweak.m */; };
+		0934E08D1D6BF110000B9D1D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934E08B1D6BF110000B9D1D /* Aspects.m */; };
+		09CCF64B1D6708A300BEF18D /* YLAssitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF63A1D6708A300BEF18D /* YLAssitManager.m */; };
+		09CCF64C1D6708A300BEF18D /* YLCoordinatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF63C1D6708A300BEF18D /* YLCoordinatesViewController.m */; };
+		09CCF64D1D6708A300BEF18D /* YLExplorerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF63E1D6708A300BEF18D /* YLExplorerToolBar.m */; };
+		09CCF64E1D6708A300BEF18D /* YLExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6401D6708A300BEF18D /* YLExplorerViewController.m */; };
+		09CCF64F1D6708A300BEF18D /* YLGlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6421D6708A300BEF18D /* YLGlobalViewController.m */; };
+		09CCF6501D6708A300BEF18D /* YLHongBaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */; };
+		09CCF6511D6708A300BEF18D /* YLSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */; };
+		09CCF6521D6708A300BEF18D /* YLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6481D6708A300BEF18D /* YLUtility.m */; };
+		09CCF6531D6708A300BEF18D /* YLWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF64A1D6708A300BEF18D /* YLWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +26,34 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				098DA9A91D658511008608A7 /* TestTweak.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0934E08A1D6BF110000B9D1D /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		0934E08B1D6BF110000B9D1D /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatRedEnvelop.h; sourceTree = "<group>"; };
 		098DA9A51D658511008608A7 /* libTestTweak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestTweak.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		098DA9A81D658511008608A7 /* TestTweak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTweak.h; sourceTree = "<group>"; };
-		098DA9AA1D658511008608A7 /* TestTweak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTweak.m; sourceTree = "<group>"; };
+		09CCF6391D6708A300BEF18D /* YLAssitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAssitManager.h; sourceTree = "<group>"; };
+		09CCF63A1D6708A300BEF18D /* YLAssitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAssitManager.m; sourceTree = "<group>"; };
+		09CCF63B1D6708A300BEF18D /* YLCoordinatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCoordinatesViewController.h; sourceTree = "<group>"; };
+		09CCF63C1D6708A300BEF18D /* YLCoordinatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCoordinatesViewController.m; sourceTree = "<group>"; };
+		09CCF63D1D6708A300BEF18D /* YLExplorerToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExplorerToolBar.h; sourceTree = "<group>"; };
+		09CCF63E1D6708A300BEF18D /* YLExplorerToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExplorerToolBar.m; sourceTree = "<group>"; };
+		09CCF63F1D6708A300BEF18D /* YLExplorerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExplorerViewController.h; sourceTree = "<group>"; };
+		09CCF6401D6708A300BEF18D /* YLExplorerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExplorerViewController.m; sourceTree = "<group>"; };
+		09CCF6411D6708A300BEF18D /* YLGlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGlobalViewController.h; sourceTree = "<group>"; };
+		09CCF6421D6708A300BEF18D /* YLGlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGlobalViewController.m; sourceTree = "<group>"; };
+		09CCF6431D6708A300BEF18D /* YLHongBaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHongBaoViewController.h; sourceTree = "<group>"; };
+		09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHongBaoViewController.m; sourceTree = "<group>"; };
+		09CCF6451D6708A300BEF18D /* YLSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSwitchTableViewCell.h; sourceTree = "<group>"; };
+		09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSwitchTableViewCell.m; sourceTree = "<group>"; };
+		09CCF6471D6708A300BEF18D /* YLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUtility.h; sourceTree = "<group>"; };
+		09CCF6481D6708A300BEF18D /* YLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUtility.m; sourceTree = "<group>"; };
+		09CCF6491D6708A300BEF18D /* YLWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWindow.h; sourceTree = "<group>"; };
+		09CCF64A1D6708A300BEF18D /* YLWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +86,37 @@
 		098DA9A71D658511008608A7 /* TestTweak */ = {
 			isa = PBXGroup;
 			children = (
-				098DA9A81D658511008608A7 /* TestTweak.h */,
-				098DA9AA1D658511008608A7 /* TestTweak.m */,
+				09CCF6381D6708A300BEF18D /* WeChatAssistant */,
 			);
 			path = TestTweak;
+			sourceTree = "<group>";
+		};
+		09CCF6381D6708A300BEF18D /* WeChatAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				0934E08A1D6BF110000B9D1D /* Aspects.h */,
+				0934E08B1D6BF110000B9D1D /* Aspects.m */,
+				0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */,
+				09CCF6391D6708A300BEF18D /* YLAssitManager.h */,
+				09CCF63A1D6708A300BEF18D /* YLAssitManager.m */,
+				09CCF63B1D6708A300BEF18D /* YLCoordinatesViewController.h */,
+				09CCF63C1D6708A300BEF18D /* YLCoordinatesViewController.m */,
+				09CCF63D1D6708A300BEF18D /* YLExplorerToolBar.h */,
+				09CCF63E1D6708A300BEF18D /* YLExplorerToolBar.m */,
+				09CCF63F1D6708A300BEF18D /* YLExplorerViewController.h */,
+				09CCF6401D6708A300BEF18D /* YLExplorerViewController.m */,
+				09CCF6411D6708A300BEF18D /* YLGlobalViewController.h */,
+				09CCF6421D6708A300BEF18D /* YLGlobalViewController.m */,
+				09CCF6431D6708A300BEF18D /* YLHongBaoViewController.h */,
+				09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */,
+				09CCF6451D6708A300BEF18D /* YLSwitchTableViewCell.h */,
+				09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */,
+				09CCF6471D6708A300BEF18D /* YLUtility.h */,
+				09CCF6481D6708A300BEF18D /* YLUtility.m */,
+				09CCF6491D6708A300BEF18D /* YLWindow.h */,
+				09CCF64A1D6708A300BEF18D /* YLWindow.m */,
+			);
+			path = WeChatAssistant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				098DA9AB1D658511008608A7 /* TestTweak.m in Sources */,
+				09CCF6521D6708A300BEF18D /* YLUtility.m in Sources */,
+				09CCF64E1D6708A300BEF18D /* YLExplorerViewController.m in Sources */,
+				09CCF6501D6708A300BEF18D /* YLHongBaoViewController.m in Sources */,
+				09CCF64B1D6708A300BEF18D /* YLAssitManager.m in Sources */,
+				09CCF6511D6708A300BEF18D /* YLSwitchTableViewCell.m in Sources */,
+				0934E08D1D6BF110000B9D1D /* Aspects.m in Sources */,
+				09CCF6531D6708A300BEF18D /* YLWindow.m in Sources */,
+				09CCF64C1D6708A300BEF18D /* YLCoordinatesViewController.m in Sources */,
+				09CCF64F1D6708A300BEF18D /* YLGlobalViewController.m in Sources */,
+				09CCF64D1D6708A300BEF18D /* YLExplorerToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +310,7 @@
 				098DA9B01D658511008608A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
