@@ -9,9 +9,7 @@
 2. 拷贝其到微信的二进制包中
 
 
-3. 修改微信二进制,使其能够加载我们的动态库,这一步需要使用[optool](https://github.com/alexzielenski/optool)来实现
-
-optool install -c load -p "@executable_path/TestTweak.dylib" -t Payload/WeChat.app/WeChat
+3. 修改微信二进制,使其能够加载我们的动态库,这一步需要使用[optool](https://github.com/alexzielenski/optool)来实现  optool install -c load -p "@executable_path/TestTweak.dylib" -t Payload/WeChat.app/WeChat
 
 
 4. 接下来把我们生成的dylib(libautoGetRedEnv.dylib)、刚刚注入dylib的WeChat、以及embedded.mobileprovision文件(可以在之前打包过的App中找到)拷贝到WeChat.app中
