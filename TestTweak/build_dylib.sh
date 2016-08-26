@@ -14,7 +14,7 @@ SDK_ROOT_OS=$DEVELOPER_DIR/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.s
 SDK_ROOT_SIMULATOR=$DEVELOPER_DIR/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
 
 ARCHS="armv7 arm64"
-INPUT=$(find src -type f -name "*.m")
+INPUT=$(find ${src} -type f -name "*.m")
 
 for ARCH in ${ARCHS}
 do
