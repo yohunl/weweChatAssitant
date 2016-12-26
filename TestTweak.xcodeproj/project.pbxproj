@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092B982A1E10A626008B8B7C /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 092B98291E10A626008B8B7C /* UICKeyChainStore.m */; };
+		092BB8F81E10EBBD008B8B7C /* YLAssitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB8EB1E10EBBD008B8B7C /* YLAssitManager.m */; };
+		092BB8F91E10EBBD008B8B7C /* YLExplorerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB8ED1E10EBBD008B8B7C /* YLExplorerToolBar.m */; };
+		092BB8FA1E10EBBD008B8B7C /* YLExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB8EF1E10EBBD008B8B7C /* YLExplorerViewController.m */; };
+		092BB8FB1E10EBBD008B8B7C /* YLGlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB8F11E10EBBD008B8B7C /* YLGlobalViewController.m */; };
+		092BB8FC1E10EBBD008B8B7C /* YLWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB8F31E10EBBD008B8B7C /* YLWindow.m */; };
+		092BB8FD1E10EBBD008B8B7C /* YLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB8F51E10EBBD008B8B7C /* YLLocationManager.m */; };
+		092BB8FE1E10EBBD008B8B7C /* YLLocationCaluate.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB8F71E10EBBD008B8B7C /* YLLocationCaluate.m */; };
+		092BB9051E10EBE0008B8B7C /* YLCoordinatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9001E10EBE0008B8B7C /* YLCoordinatesViewController.m */; };
+		092BB9061E10EBE0008B8B7C /* YLMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9021E10EBE0008B8B7C /* YLMapViewController.m */; };
+		092BB9071E10EBE0008B8B7C /* YLMyAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9041E10EBE0008B8B7C /* YLMyAnotation.m */; };
+		092BB90C1E10EBFA008B8B7C /* YLCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9091E10EBFA008B8B7C /* YLCellModel.m */; };
+		092BB90D1E10EBFA008B8B7C /* YLTextFeildTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB90B1E10EBFA008B8B7C /* YLTextFeildTableViewCell.m */; };
+		092BB9111E10EC08008B8B7C /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB90F1E10EC08008B8B7C /* UIView+Helpers.m */; };
+		092BB9141E10EC42008B8B7C /* DingTalkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9131E10EC42008B8B7C /* DingTalkConfig.m */; };
 		0934E08D1D6BF110000B9D1D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934E08B1D6BF110000B9D1D /* Aspects.m */; };
-		09CCF64B1D6708A300BEF18D /* YLAssitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF63A1D6708A300BEF18D /* YLAssitManager.m */; };
-		09CCF64C1D6708A300BEF18D /* YLCoordinatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF63C1D6708A300BEF18D /* YLCoordinatesViewController.m */; };
-		09CCF64D1D6708A300BEF18D /* YLExplorerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF63E1D6708A300BEF18D /* YLExplorerToolBar.m */; };
-		09CCF64E1D6708A300BEF18D /* YLExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6401D6708A300BEF18D /* YLExplorerViewController.m */; };
-		09CCF64F1D6708A300BEF18D /* YLGlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6421D6708A300BEF18D /* YLGlobalViewController.m */; };
 		09CCF6501D6708A300BEF18D /* YLHongBaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */; };
 		09CCF6511D6708A300BEF18D /* YLSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */; };
 		09CCF6521D6708A300BEF18D /* YLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6481D6708A300BEF18D /* YLUtility.m */; };
-		09CCF6531D6708A300BEF18D /* YLWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF64A1D6708A300BEF18D /* YLWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,28 +41,47 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		092B98281E10A626008B8B7C /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		092B98291E10A626008B8B7C /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		092BB8EA1E10EBBD008B8B7C /* YLAssitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAssitManager.h; sourceTree = "<group>"; };
+		092BB8EB1E10EBBD008B8B7C /* YLAssitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAssitManager.m; sourceTree = "<group>"; };
+		092BB8EC1E10EBBD008B8B7C /* YLExplorerToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExplorerToolBar.h; sourceTree = "<group>"; };
+		092BB8ED1E10EBBD008B8B7C /* YLExplorerToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExplorerToolBar.m; sourceTree = "<group>"; };
+		092BB8EE1E10EBBD008B8B7C /* YLExplorerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExplorerViewController.h; sourceTree = "<group>"; };
+		092BB8EF1E10EBBD008B8B7C /* YLExplorerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExplorerViewController.m; sourceTree = "<group>"; };
+		092BB8F01E10EBBD008B8B7C /* YLGlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGlobalViewController.h; sourceTree = "<group>"; };
+		092BB8F11E10EBBD008B8B7C /* YLGlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGlobalViewController.m; sourceTree = "<group>"; };
+		092BB8F21E10EBBD008B8B7C /* YLWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWindow.h; sourceTree = "<group>"; };
+		092BB8F31E10EBBD008B8B7C /* YLWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWindow.m; sourceTree = "<group>"; };
+		092BB8F41E10EBBD008B8B7C /* YLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLocationManager.h; sourceTree = "<group>"; };
+		092BB8F51E10EBBD008B8B7C /* YLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLocationManager.m; sourceTree = "<group>"; };
+		092BB8F61E10EBBD008B8B7C /* YLLocationCaluate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLocationCaluate.h; sourceTree = "<group>"; };
+		092BB8F71E10EBBD008B8B7C /* YLLocationCaluate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLocationCaluate.m; sourceTree = "<group>"; };
+		092BB8FF1E10EBE0008B8B7C /* YLCoordinatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCoordinatesViewController.h; sourceTree = "<group>"; };
+		092BB9001E10EBE0008B8B7C /* YLCoordinatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCoordinatesViewController.m; sourceTree = "<group>"; };
+		092BB9011E10EBE0008B8B7C /* YLMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMapViewController.h; sourceTree = "<group>"; };
+		092BB9021E10EBE0008B8B7C /* YLMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMapViewController.m; sourceTree = "<group>"; };
+		092BB9031E10EBE0008B8B7C /* YLMyAnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMyAnotation.h; sourceTree = "<group>"; };
+		092BB9041E10EBE0008B8B7C /* YLMyAnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMyAnotation.m; sourceTree = "<group>"; };
+		092BB9081E10EBFA008B8B7C /* YLCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCellModel.h; sourceTree = "<group>"; };
+		092BB9091E10EBFA008B8B7C /* YLCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCellModel.m; sourceTree = "<group>"; };
+		092BB90A1E10EBFA008B8B7C /* YLTextFeildTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTextFeildTableViewCell.h; sourceTree = "<group>"; };
+		092BB90B1E10EBFA008B8B7C /* YLTextFeildTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTextFeildTableViewCell.m; sourceTree = "<group>"; };
+		092BB90E1E10EC08008B8B7C /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
+		092BB90F1E10EC08008B8B7C /* UIView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helpers.m"; sourceTree = "<group>"; };
+		092BB9101E10EC08008B8B7C /* gloabalConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gloabalConfig.json; sourceTree = "<group>"; };
+		092BB9121E10EC42008B8B7C /* DingTalkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DingTalkConfig.h; sourceTree = "<group>"; };
+		092BB9131E10EC42008B8B7C /* DingTalkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DingTalkConfig.m; sourceTree = "<group>"; };
 		0934E08A1D6BF110000B9D1D /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
 		0934E08B1D6BF110000B9D1D /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatRedEnvelop.h; sourceTree = "<group>"; };
 		098DA9A51D658511008608A7 /* libTestTweak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestTweak.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		09CCF6391D6708A300BEF18D /* YLAssitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAssitManager.h; sourceTree = "<group>"; };
-		09CCF63A1D6708A300BEF18D /* YLAssitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAssitManager.m; sourceTree = "<group>"; };
-		09CCF63B1D6708A300BEF18D /* YLCoordinatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCoordinatesViewController.h; sourceTree = "<group>"; };
-		09CCF63C1D6708A300BEF18D /* YLCoordinatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCoordinatesViewController.m; sourceTree = "<group>"; };
-		09CCF63D1D6708A300BEF18D /* YLExplorerToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExplorerToolBar.h; sourceTree = "<group>"; };
-		09CCF63E1D6708A300BEF18D /* YLExplorerToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExplorerToolBar.m; sourceTree = "<group>"; };
-		09CCF63F1D6708A300BEF18D /* YLExplorerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExplorerViewController.h; sourceTree = "<group>"; };
-		09CCF6401D6708A300BEF18D /* YLExplorerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExplorerViewController.m; sourceTree = "<group>"; };
-		09CCF6411D6708A300BEF18D /* YLGlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGlobalViewController.h; sourceTree = "<group>"; };
-		09CCF6421D6708A300BEF18D /* YLGlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGlobalViewController.m; sourceTree = "<group>"; };
 		09CCF6431D6708A300BEF18D /* YLHongBaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHongBaoViewController.h; sourceTree = "<group>"; };
 		09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHongBaoViewController.m; sourceTree = "<group>"; };
 		09CCF6451D6708A300BEF18D /* YLSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSwitchTableViewCell.h; sourceTree = "<group>"; };
 		09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSwitchTableViewCell.m; sourceTree = "<group>"; };
 		09CCF6471D6708A300BEF18D /* YLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUtility.h; sourceTree = "<group>"; };
 		09CCF6481D6708A300BEF18D /* YLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUtility.m; sourceTree = "<group>"; };
-		09CCF6491D6708A300BEF18D /* YLWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWindow.h; sourceTree = "<group>"; };
-		09CCF64A1D6708A300BEF18D /* YLWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +95,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092B98221E10A5D0008B8B7C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				092BB8EA1E10EBBD008B8B7C /* YLAssitManager.h */,
+				092BB8EB1E10EBBD008B8B7C /* YLAssitManager.m */,
+				092BB8EC1E10EBBD008B8B7C /* YLExplorerToolBar.h */,
+				092BB8ED1E10EBBD008B8B7C /* YLExplorerToolBar.m */,
+				092BB8EE1E10EBBD008B8B7C /* YLExplorerViewController.h */,
+				092BB8EF1E10EBBD008B8B7C /* YLExplorerViewController.m */,
+				092BB8F01E10EBBD008B8B7C /* YLGlobalViewController.h */,
+				092BB8F11E10EBBD008B8B7C /* YLGlobalViewController.m */,
+				092BB8F21E10EBBD008B8B7C /* YLWindow.h */,
+				092BB8F31E10EBBD008B8B7C /* YLWindow.m */,
+				092BB8F41E10EBBD008B8B7C /* YLLocationManager.h */,
+				092BB8F51E10EBBD008B8B7C /* YLLocationManager.m */,
+				092BB8F61E10EBBD008B8B7C /* YLLocationCaluate.h */,
+				092BB8F71E10EBBD008B8B7C /* YLLocationCaluate.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		092B98231E10A5D8008B8B7C /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				092B98271E10A60E008B8B7C /* keychian操作 */,
+				092B98261E10A5FC008B8B7C /* aspects */,
+			);
+			name = vendors;
+			sourceTree = "<group>";
+		};
+		092B98241E10A5E1008B8B7C /* 红包 */ = {
+			isa = PBXGroup;
+			children = (
+				092BB9121E10EC42008B8B7C /* DingTalkConfig.h */,
+				092BB9131E10EC42008B8B7C /* DingTalkConfig.m */,
+				09CCF6431D6708A300BEF18D /* YLHongBaoViewController.h */,
+				09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */,
+				0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */,
+			);
+			name = "红包";
+			sourceTree = "<group>";
+		};
+		092B98251E10A5E8008B8B7C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				092BB9081E10EBFA008B8B7C /* YLCellModel.h */,
+				092BB9091E10EBFA008B8B7C /* YLCellModel.m */,
+				092BB90A1E10EBFA008B8B7C /* YLTextFeildTableViewCell.h */,
+				092BB90B1E10EBFA008B8B7C /* YLTextFeildTableViewCell.m */,
+				09CCF6451D6708A300BEF18D /* YLSwitchTableViewCell.h */,
+				09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		092B98261E10A5FC008B8B7C /* aspects */ = {
+			isa = PBXGroup;
+			children = (
+				0934E08A1D6BF110000B9D1D /* Aspects.h */,
+				0934E08B1D6BF110000B9D1D /* Aspects.m */,
+			);
+			name = aspects;
+			sourceTree = "<group>";
+		};
+		092B98271E10A60E008B8B7C /* keychian操作 */ = {
+			isa = PBXGroup;
+			children = (
+				092B98281E10A626008B8B7C /* UICKeyChainStore.h */,
+				092B98291E10A626008B8B7C /* UICKeyChainStore.m */,
+			);
+			name = "keychian操作";
+			sourceTree = "<group>";
+		};
+		092B982B1E10B03D008B8B7C /* 经纬度 */ = {
+			isa = PBXGroup;
+			children = (
+				092BB8FF1E10EBE0008B8B7C /* YLCoordinatesViewController.h */,
+				092BB9001E10EBE0008B8B7C /* YLCoordinatesViewController.m */,
+				092BB9011E10EBE0008B8B7C /* YLMapViewController.h */,
+				092BB9021E10EBE0008B8B7C /* YLMapViewController.m */,
+				092BB9031E10EBE0008B8B7C /* YLMyAnotation.h */,
+				092BB9041E10EBE0008B8B7C /* YLMyAnotation.m */,
+			);
+			name = "经纬度";
+			sourceTree = "<group>";
+		};
 		098DA99C1D658511008608A7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,27 +208,16 @@
 		09CCF6381D6708A300BEF18D /* WeChatAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				0934E08A1D6BF110000B9D1D /* Aspects.h */,
-				0934E08B1D6BF110000B9D1D /* Aspects.m */,
-				0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */,
-				09CCF6391D6708A300BEF18D /* YLAssitManager.h */,
-				09CCF63A1D6708A300BEF18D /* YLAssitManager.m */,
-				09CCF63B1D6708A300BEF18D /* YLCoordinatesViewController.h */,
-				09CCF63C1D6708A300BEF18D /* YLCoordinatesViewController.m */,
-				09CCF63D1D6708A300BEF18D /* YLExplorerToolBar.h */,
-				09CCF63E1D6708A300BEF18D /* YLExplorerToolBar.m */,
-				09CCF63F1D6708A300BEF18D /* YLExplorerViewController.h */,
-				09CCF6401D6708A300BEF18D /* YLExplorerViewController.m */,
-				09CCF6411D6708A300BEF18D /* YLGlobalViewController.h */,
-				09CCF6421D6708A300BEF18D /* YLGlobalViewController.m */,
-				09CCF6431D6708A300BEF18D /* YLHongBaoViewController.h */,
-				09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */,
-				09CCF6451D6708A300BEF18D /* YLSwitchTableViewCell.h */,
-				09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */,
+				092B98221E10A5D0008B8B7C /* common */,
+				092B98241E10A5E1008B8B7C /* 红包 */,
+				092B982B1E10B03D008B8B7C /* 经纬度 */,
+				092B98251E10A5E8008B8B7C /* cell */,
+				092B98231E10A5D8008B8B7C /* vendors */,
 				09CCF6471D6708A300BEF18D /* YLUtility.h */,
 				09CCF6481D6708A300BEF18D /* YLUtility.m */,
-				09CCF6491D6708A300BEF18D /* YLWindow.h */,
-				09CCF64A1D6708A300BEF18D /* YLWindow.m */,
+				092BB90E1E10EC08008B8B7C /* UIView+Helpers.h */,
+				092BB90F1E10EC08008B8B7C /* UIView+Helpers.m */,
+				092BB9101E10EC08008B8B7C /* gloabalConfig.json */,
 			);
 			path = WeChatAssistant;
 			sourceTree = "<group>";
@@ -175,16 +278,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092BB9061E10EBE0008B8B7C /* YLMapViewController.m in Sources */,
+				092BB9141E10EC42008B8B7C /* DingTalkConfig.m in Sources */,
 				09CCF6521D6708A300BEF18D /* YLUtility.m in Sources */,
-				09CCF64E1D6708A300BEF18D /* YLExplorerViewController.m in Sources */,
+				092BB8F91E10EBBD008B8B7C /* YLExplorerToolBar.m in Sources */,
+				092BB8FA1E10EBBD008B8B7C /* YLExplorerViewController.m in Sources */,
 				09CCF6501D6708A300BEF18D /* YLHongBaoViewController.m in Sources */,
-				09CCF64B1D6708A300BEF18D /* YLAssitManager.m in Sources */,
+				092B982A1E10A626008B8B7C /* UICKeyChainStore.m in Sources */,
+				092BB9111E10EC08008B8B7C /* UIView+Helpers.m in Sources */,
+				092BB8F81E10EBBD008B8B7C /* YLAssitManager.m in Sources */,
+				092BB9071E10EBE0008B8B7C /* YLMyAnotation.m in Sources */,
+				092BB8FC1E10EBBD008B8B7C /* YLWindow.m in Sources */,
+				092BB8FE1E10EBBD008B8B7C /* YLLocationCaluate.m in Sources */,
 				09CCF6511D6708A300BEF18D /* YLSwitchTableViewCell.m in Sources */,
+				092BB8FD1E10EBBD008B8B7C /* YLLocationManager.m in Sources */,
+				092BB90D1E10EBFA008B8B7C /* YLTextFeildTableViewCell.m in Sources */,
+				092BB8FB1E10EBBD008B8B7C /* YLGlobalViewController.m in Sources */,
+				092BB9051E10EBE0008B8B7C /* YLCoordinatesViewController.m in Sources */,
+				092BB90C1E10EBFA008B8B7C /* YLCellModel.m in Sources */,
 				0934E08D1D6BF110000B9D1D /* Aspects.m in Sources */,
-				09CCF6531D6708A300BEF18D /* YLWindow.m in Sources */,
-				09CCF64C1D6708A300BEF18D /* YLCoordinatesViewController.m in Sources */,
-				09CCF64F1D6708A300BEF18D /* YLGlobalViewController.m in Sources */,
-				09CCF64D1D6708A300BEF18D /* YLExplorerToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
