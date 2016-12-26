@@ -61,5 +61,6 @@ iOSInjectionProject/
 
 .DS_Store
 .theos/
-JailBreakLoadtweak/packages/
-bin/
+TestTweak/wechatredenvelopJailBreakTweak/.theos/
+TestTweak/wechatredenvelopJailBreakTweak/packages/
+TestTweak/bin/

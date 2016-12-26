@@ -41,7 +41,7 @@ static NSString *const kYLHongBaoEnableNotification = @"com.yohunl.kYLHongbaoEna
                 return;
             }
             else{
-                NSLog(@"yl_AsyncOnAddMsg 走我设置的抢红包逻辑");
+                
             }
             
             NSDictionary *globalDict = [YLAssitManager sharedManager].gloabalConfigDict;
@@ -54,30 +54,31 @@ static NSString *const kYLHongBaoEnableNotification = @"com.yohunl.kYLHongbaoEna
                 }
                 
             }
-            
+            NSLog(@"yl_AsyncOnAddMsg 走我设置的抢红包逻辑");
             CContactMgr *contactManager = [[objc_getClass("MMServiceCenter") defaultCenter] getService:[objc_getClass("CContactMgr") class]];
             CContact *selfContact = [contactManager getSelfContact];//自己的用户信息
-            BOOL canPick;
+            BOOL canPick ;
             BOOL isMesasgeFromMe = NO;
             if ([wrap.m_nsFromUsr isEqualToString:selfContact.m_nsUsrName]) {
                 isMesasgeFromMe = YES;
             }
             if (isMesasgeFromMe && ![YLAssitManager sharedManager].redEnvelopConfig.pickOwnerRedEnvelop) {//不抢自己的
+                NSLog(@"yl_AsyncOnAddMsg 不抢自己的");
                 canPick = NO;
             }
             else {
                 canPick = [self disposeCongratsRegula:[YLAssitManager sharedManager].redEnvelopConfig.regularText congrats:wrap.m_nsContent];
-                NSLog(@"lingdaiping_canPick1 = %d",canPick);
+                NSLog(@"yl_AsyncOnAddMsg lingdaiping_canPick1 = %d",canPick);
                 if (canPick) {
                     canPick = [self disposeNameCongratsRegula:[YLAssitManager sharedManager].redEnvelopConfig.nameregularText name:wrap.m_nsFromUsr];
-                    NSLog(@"lingdaiping_canPick2 = %d",canPick);
+                    NSLog(@"yl_AsyncOnAddMsg lingdaiping_canPick2 = %d",canPick);
                 }
                 
             }
             
             if (canPick) {
                 CGFloat delatyTIme = [YLAssitManager sharedManager].redEnvelopConfig.delayTime;
-                NSLog(@"lingdaiping_delatyTIme = %f",delatyTIme);
+                NSLog(@"yl_AsyncOnAddMsg lingdaiping_delatyTIme = %f",delatyTIme);
                 if (delatyTIme > 0) {
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delatyTIme * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         [self disposeMessageCrap:wrap selfContact:selfContact];
