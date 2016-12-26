@@ -156,7 +156,7 @@ __attribute((constructor)) void injected_function(){
   NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];
   
   
-  NSURL* URL = [NSURL URLWithString:@"https://raw.githubusercontent.com/yohunl/DingTalkNoJailTweak/develop/DingTalkNoJailTweak/gloabalConfig.json"];
+  NSURL* URL = [NSURL URLWithString:@"https://raw.githubusercontent.com/yohunl/weweChatAssitant/developer/TestTweak/WeChatAssistant/gloabalConfig.json"];
   
   NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:URL];
   request.HTTPMethod = @"GET";
