@@ -21,7 +21,7 @@
 		092BB90C1E10EBFA008B8B7C /* YLCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9091E10EBFA008B8B7C /* YLCellModel.m */; };
 		092BB90D1E10EBFA008B8B7C /* YLTextFeildTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB90B1E10EBFA008B8B7C /* YLTextFeildTableViewCell.m */; };
 		092BB9111E10EC08008B8B7C /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB90F1E10EC08008B8B7C /* UIView+Helpers.m */; };
-		092BB9141E10EC42008B8B7C /* DingTalkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9131E10EC42008B8B7C /* DingTalkConfig.m */; };
+		092BB9141E10EC42008B8B7C /* WeChatEnvelopConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9131E10EC42008B8B7C /* WeChatEnvelopConfig.m */; };
 		0934E08D1D6BF110000B9D1D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934E08B1D6BF110000B9D1D /* Aspects.m */; };
 		09CCF6501D6708A300BEF18D /* YLHongBaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */; };
 		09CCF6511D6708A300BEF18D /* YLSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */; };
@@ -70,8 +70,8 @@
 		092BB90E1E10EC08008B8B7C /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
 		092BB90F1E10EC08008B8B7C /* UIView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helpers.m"; sourceTree = "<group>"; };
 		092BB9101E10EC08008B8B7C /* gloabalConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gloabalConfig.json; sourceTree = "<group>"; };
-		092BB9121E10EC42008B8B7C /* DingTalkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DingTalkConfig.h; sourceTree = "<group>"; };
-		092BB9131E10EC42008B8B7C /* DingTalkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DingTalkConfig.m; sourceTree = "<group>"; };
+		092BB9121E10EC42008B8B7C /* WeChatEnvelopConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatEnvelopConfig.h; sourceTree = "<group>"; };
+		092BB9131E10EC42008B8B7C /* WeChatEnvelopConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatEnvelopConfig.m; sourceTree = "<group>"; };
 		0934E08A1D6BF110000B9D1D /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
 		0934E08B1D6BF110000B9D1D /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatRedEnvelop.h; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 		092B98241E10A5E1008B8B7C /* 红包 */ = {
 			isa = PBXGroup;
 			children = (
-				092BB9121E10EC42008B8B7C /* DingTalkConfig.h */,
-				092BB9131E10EC42008B8B7C /* DingTalkConfig.m */,
+				092BB9121E10EC42008B8B7C /* WeChatEnvelopConfig.h */,
+				092BB9131E10EC42008B8B7C /* WeChatEnvelopConfig.m */,
 				09CCF6431D6708A300BEF18D /* YLHongBaoViewController.h */,
 				09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */,
 				0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */,
@@ -279,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				092BB9061E10EBE0008B8B7C /* YLMapViewController.m in Sources */,
-				092BB9141E10EC42008B8B7C /* DingTalkConfig.m in Sources */,
+				092BB9141E10EC42008B8B7C /* WeChatEnvelopConfig.m in Sources */,
 				09CCF6521D6708A300BEF18D /* YLUtility.m in Sources */,
 				092BB8F91E10EBBD008B8B7C /* YLExplorerToolBar.m in Sources */,
 				092BB8FA1E10EBBD008B8B7C /* YLExplorerViewController.m in Sources */,

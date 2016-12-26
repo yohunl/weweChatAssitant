@@ -1,14 +1,14 @@
 //
-//  DingTalkConfig.m
+//  WeChatEnvelopConfig.m
 //  DingTalkNoJailTweak
 //
 //  Created by lingyohunl on 2016/12/16.
 //  Copyright © 2016年 yohunl. All rights reserved.
 //
 
-#import "DingTalkConfig.h"
+#import "WeChatEnvelopConfig.h"
 
-@implementation DingTalkConfig
+@implementation WeChatEnvelopConfig
 - (void)encodeWithCoder:(NSCoder *)encoder 
 {
   [encoder encodeBool:self.enableRedEnvolop forKey:@"enableRedEnvolop"];

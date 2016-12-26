@@ -63,12 +63,12 @@ static NSString *const kYLCoordinatesEnableNotification = @"com.yohunl.kYLCoordi
   }
   
     NSLog(@"yl_coordinate = %f,%f",oldCoordinate.latitude,oldCoordinate.longitude);
-    if ([YLCoordinatesViewController isEnabled] && ![YLAssitManager sharedManager].dingtalkConfig.useOriginalCordinate) {
+    if ([YLCoordinatesViewController isEnabled] && ![YLAssitManager sharedManager].redEnvelopConfig.useOriginalCordinate) {
         //22.549308, 113.944137  科兴的
         //23.028591, 113.722010 东莞
         NSLog(@"oldCoordinate.latitude yl_coordinate");
-        oldCoordinate.latitude = [YLAssitManager sharedManager].dingtalkConfig.latitude;//22.552582;//新的latitude
-        oldCoordinate.longitude = [YLAssitManager sharedManager].dingtalkConfig.longitude;//113.939732;//新的longitude
+        oldCoordinate.latitude = [YLAssitManager sharedManager].redEnvelopConfig.latitude;//22.552582;//新的latitude
+        oldCoordinate.longitude = [YLAssitManager sharedManager].redEnvelopConfig.longitude;//113.939732;//新的longitude
         NSLog(@"yl_coordinate change = %f,%f",oldCoordinate.latitude,oldCoordinate.longitude);
     }
     
@@ -80,7 +80,7 @@ static NSString *const kYLCoordinatesEnableNotification = @"com.yohunl.kYLCoordi
 
 @interface YLCoordinatesViewController ()
 @property (nonatomic, copy) NSArray *cells;
-@property (nonatomic,strong) DingTalkConfig *dingtalkConfig;
+@property (nonatomic,strong) WeChatEnvelopConfig *redEnvelopConfig;
 @end
 
 @implementation YLCoordinatesViewController
@@ -97,11 +97,11 @@ static NSString *const kYLCoordinatesEnableNotification = @"com.yohunl.kYLCoordi
     [super viewDidAppear:animated];
     [self reloadAll];
 }
-- (DingTalkConfig *)dingtalkConfig {
-    if (!_dingtalkConfig) {
-        _dingtalkConfig = [YLAssitManager sharedManager].dingtalkConfig;
+- (WeChatEnvelopConfig *)redEnvelopConfig {
+    if (!_redEnvelopConfig) {
+        _redEnvelopConfig = [YLAssitManager sharedManager].redEnvelopConfig;
     }
-    return _dingtalkConfig;
+    return _redEnvelopConfig;
 }
 
 - (NSMutableArray *)createCells {
@@ -124,7 +124,7 @@ static NSString *const kYLCoordinatesEnableNotification = @"com.yohunl.kYLCoordi
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.textColor = [UIColor blackColor];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"经纬度:%.3f,%.3f",self.dingtalkConfig.latitude,self.dingtalkConfig.longitude];
+    cell.textLabel.text = [NSString stringWithFormat:@"经纬度:%.3f,%.3f",self.redEnvelopConfig.latitude,self.redEnvelopConfig.longitude];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;

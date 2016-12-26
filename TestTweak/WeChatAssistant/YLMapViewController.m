@@ -69,15 +69,15 @@
     
     
     YLMyAnotation *anno = [[YLMyAnotation alloc] init];
-    anno.coordinate = CLLocationCoordinate2DMake([YLAssitManager sharedManager].dingtalkConfig.latitude, [YLAssitManager sharedManager].dingtalkConfig.longitude);
-    anno.title = [NSString stringWithFormat:@"经度：%f",[YLAssitManager sharedManager].dingtalkConfig.longitude];
-    anno.subtitle = [NSString stringWithFormat:@"纬度：%f",[YLAssitManager sharedManager].dingtalkConfig.latitude];
+    anno.coordinate = CLLocationCoordinate2DMake([YLAssitManager sharedManager].redEnvelopConfig.latitude, [YLAssitManager sharedManager].redEnvelopConfig.longitude);
+    anno.title = [NSString stringWithFormat:@"经度：%f",[YLAssitManager sharedManager].redEnvelopConfig.longitude];
+    anno.subtitle = [NSString stringWithFormat:@"纬度：%f",[YLAssitManager sharedManager].redEnvelopConfig.latitude];
     
-    self.longitudeLabel.text = [NSString stringWithFormat:@"经度：%f",[YLAssitManager sharedManager].dingtalkConfig.longitude];
-    self.latitudeLabel.text = [NSString stringWithFormat:@"纬度：%f",[YLAssitManager sharedManager].dingtalkConfig.latitude];
+    self.longitudeLabel.text = [NSString stringWithFormat:@"经度：%f",[YLAssitManager sharedManager].redEnvelopConfig.longitude];
+    self.latitudeLabel.text = [NSString stringWithFormat:@"纬度：%f",[YLAssitManager sharedManager].redEnvelopConfig.latitude];
     //反地理编码
     YLLocationCaluate *locManager = [[YLLocationCaluate alloc] init];
-    [locManager reverseGeocodeWithlatitude:[YLAssitManager sharedManager].dingtalkConfig.latitude longitude:[YLAssitManager sharedManager].dingtalkConfig.longitude success:^(NSString *address) {
+    [locManager reverseGeocodeWithlatitude:[YLAssitManager sharedManager].redEnvelopConfig.latitude longitude:[YLAssitManager sharedManager].redEnvelopConfig.longitude success:^(NSString *address) {
         self.addressLabel.text = [NSString stringWithFormat:@"%@",address];
     } failure:^{
         
@@ -92,10 +92,10 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [YLAssitManager sharedManager].dingtalkConfig.useOriginalCordinate = YES;
+    [YLAssitManager sharedManager].redEnvelopConfig.useOriginalCordinate = YES;
 }
 - (void)viewDidDisappear:(BOOL)animated {
-    [YLAssitManager sharedManager].dingtalkConfig.useOriginalCordinate = NO;
+    [YLAssitManager sharedManager].redEnvelopConfig.useOriginalCordinate = NO;
 }
 - (void)currentLocationBtnAction:(id)sender {
     [self.mapView setCenterCoordinate:self.mapView.userLocation.coordinate animated:YES];
@@ -186,8 +186,8 @@
 {
     CGPoint touchPoint = [tap locationInView:tap.view];
     CLLocationCoordinate2D coordinate = [self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];
-    [YLAssitManager sharedManager].dingtalkConfig.latitude = coordinate.latitude;
-    [YLAssitManager sharedManager].dingtalkConfig.longitude = coordinate.longitude;
+    [YLAssitManager sharedManager].redEnvelopConfig.latitude = coordinate.latitude;
+    [YLAssitManager sharedManager].redEnvelopConfig.longitude = coordinate.longitude;
     [[YLAssitManager sharedManager]synchronousConfig];
     
     NSLog(@"%@",self.mapView.annotations);

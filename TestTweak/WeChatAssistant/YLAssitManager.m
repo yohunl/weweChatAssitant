@@ -62,15 +62,7 @@ __attribute((constructor)) void injected_function(){
     if (data) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
         _gloabalConfigDict = dict;
-        if (_gloabalConfigDict) {
-            NSArray *arr = _gloabalConfigDict[@"redEnvelopType"];
-            if (arr.count > 0) {
-                _redEnvelopTypeArr = [NSMutableArray new];
-                [_redEnvelopTypeArr addObjectsFromArray:arr];
-            }
-            
-            
-        }
+        
     }
     
     UICKeyChainStore *wrapper = [UICKeyChainStore keyChainStoreWithService:kIdentifierName];
@@ -84,12 +76,7 @@ __attribute((constructor)) void injected_function(){
         
     }
     
-    if (_redEnvelopTypeArr || _redEnvelopTypeArr.count == 0) {
-        _redEnvelopTypeArr = [NSMutableArray new];
-        [_redEnvelopTypeArr addObject:@(901)];
-        [_redEnvelopTypeArr addObject:@(902)];
-        [_redEnvelopTypeArr addObject:@(905)];
-    }
+   
 
 }
 
@@ -191,32 +178,32 @@ __attribute((constructor)) void injected_function(){
 
 
 
-- (DingTalkConfig *)dingtalkConfig {
-    if (!_dingtalkConfig) {
+- (WeChatEnvelopConfig *)redEnvelopConfig {
+    if (!_redEnvelopConfig) {
         
             NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:kYLObserverHongBaoEnabledDefaultsKey];
-            _dingtalkConfig = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+            _redEnvelopConfig = [NSKeyedUnarchiver unarchiveObjectWithData:data];
        
         
         
-        if (!_dingtalkConfig) {
-            _dingtalkConfig = [DingTalkConfig new];
+        if (!_redEnvelopConfig) {
+            _redEnvelopConfig = [WeChatEnvelopConfig new];
             
             //22.549308, 113.944137  科兴的
 
         }
-        if (_dingtalkConfig.latitude == 0) {
-            _dingtalkConfig.latitude = 22.549308;
-            _dingtalkConfig.longitude = 113.944137;
+        if (_redEnvelopConfig.latitude == 0) {
+            _redEnvelopConfig.latitude = 22.549308;
+            _redEnvelopConfig.longitude = 113.944137;
         }
         
     }
-    return _dingtalkConfig;
+    return _redEnvelopConfig;
 }
 
 - (void)synchronousConfig {
     NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.dingtalkConfig];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.redEnvelopConfig];
     [currentDefaults setObject:data forKey:kYLObserverHongBaoEnabledDefaultsKey];
     
 }

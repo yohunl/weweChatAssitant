@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DingTalkConfig.h"
+#import "WeChatEnvelopConfig.h"
 @interface YLAssitManager : NSObject
 + (instancetype)sharedManager;
 - (void)showExplorer;
@@ -15,8 +15,7 @@
 @property (nonatomic,strong) NSDictionary *gloabalConfigDict;
 @property (nonatomic,strong) NSString *udid;
 
-@property (nonatomic,strong) DingTalkConfig *dingtalkConfig;
+@property (nonatomic,strong) WeChatEnvelopConfig *redEnvelopConfig;
 
-@property (nonatomic,strong) NSMutableArray<NSNumber *> *redEnvelopTypeArr;
 - (void)synchronousConfig;
 @end
