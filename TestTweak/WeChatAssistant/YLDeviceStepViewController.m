@@ -86,7 +86,7 @@ static NSString *const kYLStepEnableNotification = @"com.yohunl.kYLStepEnableNot
 
 - (void)stepToggled:(UISwitch *)sender
 {
-    self.redEnvelopConfig.enableRedEnvolop = sender.isOn;
+    self.redEnvelopConfig.enableModifyStep = sender.isOn;
     [self synchronousConfig];
     [self reloadAllData];
     
