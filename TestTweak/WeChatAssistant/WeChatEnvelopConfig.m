@@ -21,9 +21,10 @@
     [encoder encodeBool:self.enableCoordinate forKey:@"enableCoordinate"];
     [encoder encodeObject:self.redenvelopTypeText forKey:@"redenvelopTypeText"];
     
+    [encoder encodeBool:self.enableModifyStep forKey:@"enableModifyStep"];
+    [encoder encodeInt:self.ylNewStepCount forKey:@"ylNewStepCount"];
     
-    
-  
+
 }
 
 - (id)initWithCoder:(NSCoder *)decoder 
@@ -40,6 +41,9 @@
       
       self.enableCoordinate = [decoder decodeBoolForKey:@"enableCoordinate"];
       self.redenvelopTypeText = [decoder decodeObjectForKey:@"redenvelopTypeText"];
+      
+      self.enableModifyStep = [decoder decodeBoolForKey:@"enableModifyStep"];
+      self.ylNewStepCount = [decoder decodeIntForKey:@"ylNewStepCount"];
      
     
   }
