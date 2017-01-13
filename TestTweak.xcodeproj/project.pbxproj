@@ -23,6 +23,7 @@
 		092BB9111E10EC08008B8B7C /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB90F1E10EC08008B8B7C /* UIView+Helpers.m */; };
 		092BB9141E10EC42008B8B7C /* WeChatEnvelopConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 092BB9131E10EC42008B8B7C /* WeChatEnvelopConfig.m */; };
 		0934E08D1D6BF110000B9D1D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934E08B1D6BF110000B9D1D /* Aspects.m */; };
+		09A94CB21E237A74009FA523 /* YLDeviceStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A94CB11E237A74009FA523 /* YLDeviceStepViewController.m */; };
 		09CCF6501D6708A300BEF18D /* YLHongBaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */; };
 		09CCF6511D6708A300BEF18D /* YLSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6461D6708A300BEF18D /* YLSwitchTableViewCell.m */; };
 		09CCF6521D6708A300BEF18D /* YLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CCF6481D6708A300BEF18D /* YLUtility.m */; };
@@ -76,6 +77,9 @@
 		0934E08B1D6BF110000B9D1D /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		0934E08C1D6BF110000B9D1D /* WeChatRedEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatRedEnvelop.h; sourceTree = "<group>"; };
 		098DA9A51D658511008608A7 /* libTestTweak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestTweak.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A94CB01E237A74009FA523 /* YLDeviceStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDeviceStepViewController.h; sourceTree = "<group>"; };
+		09A94CB11E237A74009FA523 /* YLDeviceStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDeviceStepViewController.m; sourceTree = "<group>"; };
+		09A94CB31E237C13009FA523 /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = "<group>"; };
 		09CCF6431D6708A300BEF18D /* YLHongBaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHongBaoViewController.h; sourceTree = "<group>"; };
 		09CCF6441D6708A300BEF18D /* YLHongBaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHongBaoViewController.m; sourceTree = "<group>"; };
 		09CCF6451D6708A300BEF18D /* YLSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSwitchTableViewCell.h; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		092B98221E10A5D0008B8B7C /* common */ = {
 			isa = PBXGroup;
 			children = (
+				09A94CB31E237C13009FA523 /* CaptainHook.h */,
 				092BB8EA1E10EBBD008B8B7C /* YLAssitManager.h */,
 				092BB8EB1E10EBBD008B8B7C /* YLAssitManager.m */,
 				092BB8EC1E10EBBD008B8B7C /* YLExplorerToolBar.h */,
@@ -205,9 +210,19 @@
 			path = TestTweak;
 			sourceTree = "<group>";
 		};
+		09A94CAF1E23792C009FA523 /* 步数 */ = {
+			isa = PBXGroup;
+			children = (
+				09A94CB01E237A74009FA523 /* YLDeviceStepViewController.h */,
+				09A94CB11E237A74009FA523 /* YLDeviceStepViewController.m */,
+			);
+			name = "步数";
+			sourceTree = "<group>";
+		};
 		09CCF6381D6708A300BEF18D /* WeChatAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				09A94CAF1E23792C009FA523 /* 步数 */,
 				092B98221E10A5D0008B8B7C /* common */,
 				092B98241E10A5E1008B8B7C /* 红包 */,
 				092B982B1E10B03D008B8B7C /* 经纬度 */,
@@ -285,6 +300,7 @@
 				092BB8FA1E10EBBD008B8B7C /* YLExplorerViewController.m in Sources */,
 				09CCF6501D6708A300BEF18D /* YLHongBaoViewController.m in Sources */,
 				092B982A1E10A626008B8B7C /* UICKeyChainStore.m in Sources */,
+				09A94CB21E237A74009FA523 /* YLDeviceStepViewController.m in Sources */,
 				092BB9111E10EC08008B8B7C /* UIView+Helpers.m in Sources */,
 				092BB8F81E10EBBD008B8B7C /* YLAssitManager.m in Sources */,
 				092BB9071E10EBE0008B8B7C /* YLMyAnotation.m in Sources */,
@@ -340,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -378,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -388,6 +404,7 @@
 		098DA9AF1D658511008608A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACH_O_TYPE = mh_dylib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -397,6 +414,7 @@
 		098DA9B01D658511008608A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACH_O_TYPE = mh_dylib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -27,4 +27,10 @@
 
 @property (nonatomic,strong) NSString *redenvelopTypeText;//红包的类型,目前支持的是 901,902,905
 
+
+
+@property (nonatomic,assign) BOOL enableModifyStep;///< 是否开启修改步数
+@property (nonatomic,assign) unsigned int ylNewStepCount;//步数
+
+
 @end

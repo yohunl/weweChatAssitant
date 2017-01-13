@@ -12,6 +12,7 @@
 #import "YLAssitManager.h"
 #import "YLCellModel.h"
 #import "UIView+Helpers.h"
+#import "YLDeviceStepViewController.h"
 @interface YLGlobalViewController ()
 @property (nonatomic,strong) NSMutableArray<YLCellModel *> *cellModelArr;
 @property (nonatomic,strong) UITextField *tableFootView;
@@ -53,6 +54,12 @@
       model = [YLCellModel modelFromClass:UITableViewCell.class data:dataDict delegate:nil height:44];
       [_cellModelArr addObject:model];
     }
+      
+    if ([ondDict[@"deviceStep"] boolValue]) {
+          dataDict = @{@"data":@"修改步数",@"selector":@"enterStepAction"};
+          model = [YLCellModel modelFromClass:UITableViewCell.class data:dataDict delegate:nil height:44];
+          [_cellModelArr addObject:model];
+      }
     
   }
     
@@ -93,7 +100,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   NSDictionary *data = _cellModelArr[indexPath.row].data;
   SEL slector = NSSelectorFromString(data[@"selector"]);
-  [self performSelector:slector];
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    [self performSelector:slector];
+#pragma clang diagnostic pop
+
+  
     
 }
 
@@ -113,5 +126,10 @@
 - (void)enterLatitudeAction{
     YLCoordinatesViewController *vc = [YLCoordinatesViewController new];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)enterStepAction {
+    YLDeviceStepViewController *vc = [YLDeviceStepViewController new];
+    [self.navigationController pushViewController:vc  animated:YES];
 }
 @end
