@@ -7,18 +7,21 @@
 ![](image/IMG_5461.jpg)  
 
 点击菜单,就出现了相关的控制开关了  
+![](image/IMG_5456.PNG)   
+ 
 
-总菜单
-![](image/IMG_5456.PNG)  
+抢红包设置  
+![](image/IMG_5457.PNG)    
 
-抢红包设置
-![](image/IMG_5457.PNG)  
 
-经纬度设置
-![](image/IMG_5459.PNG)  
+经纬度设置  
+![](image/IMG_5459.PNG)    
 
-运动步数设置
+
+运动步数设置  
 ![](image/IMG_5460.PNG)  
+
+
 
 
 使用方式
