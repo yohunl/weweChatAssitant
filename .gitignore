@@ -60,7 +60,6 @@ fastlane/screenshots
 iOSInjectionProject/
 
 .DS_Store
-.theos/
 TestTweak/wechatredenvelopJailBreakTweak/.theos/
 TestTweak/wechatredenvelopJailBreakTweak/packages/
 TestTweak/bin/

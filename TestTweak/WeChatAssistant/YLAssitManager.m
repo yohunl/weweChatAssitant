@@ -57,13 +57,7 @@ __attribute((constructor)) void injected_function(){
     //  udid在非越狱手机上,没有权限,所以只能使用其它方式
     
     
-    NSError *error = nil;
-    NSData *data = [YLUtility readDataFromFile:kConfigDataFileName];
-    if (data) {
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-        _gloabalConfigDict = dict;
-        
-    }
+
     
     UICKeyChainStore *wrapper = [UICKeyChainStore keyChainStoreWithService:kIdentifierName];
     _udid = wrapper[@"udid"];
@@ -75,6 +69,28 @@ __attribute((constructor)) void injected_function(){
         }
         
     }
+    
+#if 0
+    NSError *error = nil;
+    NSData *data = [YLUtility readDataFromFile:kConfigDataFileName];
+    if (data) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
+        _gloabalConfigDict = dict;
+        
+    }
+#else
+    if (_udid.length > 0) {
+        NSMutableDictionary *dict = [NSMutableDictionary new];
+        NSMutableDictionary *rightDcit = [NSMutableDictionary new];
+        rightDcit[@"redEnvelop"] = @1;
+        rightDcit[@"longitudeAndlatitude"] = @1;
+        rightDcit[@"deviceStep"] = @1;
+        
+        dict[_udid] = rightDcit;
+        _gloabalConfigDict = dict;
+    }
+    
+#endif
     
    
 
