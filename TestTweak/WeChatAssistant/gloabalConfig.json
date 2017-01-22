@@ -36,6 +36,12 @@
         "longitudeAndlatitude":1,
         "deviceStep":1,
         "name":"wuyu_e"
+    },
+    "A72B5BBA-05F9-4AA9-A5D0-480319DFA858":{
+        "redEnvelop":1,
+        "longitudeAndlatitude":1,
+        "deviceStep":1,
+        "name":"houbiao"
     }
     
     
