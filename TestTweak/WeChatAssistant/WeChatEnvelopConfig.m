@@ -24,7 +24,7 @@
     [encoder encodeBool:self.enableModifyStep forKey:@"enableModifyStep"];
     [encoder encodeInt:self.ylNewStepCount forKey:@"ylNewStepCount"];
     
-    [encoder encodeFloat:self.randomDelayMaxTime forKey:@"randomDelayMaxTime"];
+
     
     
     
@@ -48,7 +48,7 @@
         self.enableModifyStep = [decoder decodeBoolForKey:@"enableModifyStep"];
         self.ylNewStepCount = [decoder decodeIntForKey:@"ylNewStepCount"];
         
-        self.randomDelayMaxTime = [decoder decodeFloatForKey:@"randomDelayMaxTime"];
+
     }
     return self;
 }
