@@ -18,7 +18,32 @@
         "longitudeAndlatitude":1,
         "deviceStep":1,
         "name":"huangxuan"
+    },
+   "6AA4CA13-CF4C-405C-A13F-6B863A2C3333":{
+        "redEnvelop":1,
+        "longitudeAndlatitude":1,
+        "deviceStep":1,
+        "name":"chengguwen"
+    },
+    "1FFDA27C-EAE3-43CA-A604-532BA9190875":{
+        "redEnvelop":1,
+        "longitudeAndlatitude":1,
+        "deviceStep":1,
+        "name":"wuyu_e"
+    },
+    "2043F845-5657-455E-93CA-8E28264F858C":{
+        "redEnvelop":1,
+        "longitudeAndlatitude":1,
+        "deviceStep":1,
+        "name":"wuyu_e"
+    },
+    "A72B5BBA-05F9-4AA9-A5D0-480319DFA858":{
+        "redEnvelop":1,
+        "longitudeAndlatitude":1,
+        "deviceStep":1,
+        "name":"houbiao"
     }
+    
     
     
     

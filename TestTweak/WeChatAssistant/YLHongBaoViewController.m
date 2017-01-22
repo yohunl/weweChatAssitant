@@ -78,9 +78,17 @@ static NSString *const kYLHongBaoEnableNotification = @"com.yohunl.kYLHongbaoEna
             
             if (canPick) {
                 CGFloat delatyTIme = [YLAssitManager sharedManager].redEnvelopConfig.delayTime;
-                NSLog(@"yl_AsyncOnAddMsg lingdaiping_delatyTIme = %f",delatyTIme);
+                
+                NSLog(@"yl_AsyncOnAddMsg lingdaiping_delatyTIme = %f ",delatyTIme );
+                CGFloat delayTime;
+                
                 if (delatyTIme > 0) {
-                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delatyTIme * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    uint32_t cout = arc4random() % 100;
+                    delayTime = cout / 100.0 * delatyTIme;
+                }
+                
+                if (delayTime > 0) {
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         [self disposeMessageCrap:wrap selfContact:selfContact];
                     });
                 }
@@ -200,11 +208,14 @@ static NSString *const kYLHongBaoEnableNotification = @"com.yohunl.kYLHongbaoEna
 - (YLTextFeildTableViewCell *)createDelayCell {
     YLTextFeildTableViewCell *cell = [YLTextFeildTableViewCell new];
     NSString *strValue = [NSString stringWithFormat:@"%.3f",self.redEnvelopConfig.delayTime];
-    [cell setTitle:@"延迟多少秒" feildText:strValue];
+    [cell setTitle:@"随机延迟最大秒" feildText:strValue];
     cell.textField.keyboardType = UIKeyboardTypeNumberPad;
     [cell.textField addTarget:self action:@selector(delayCellFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     return cell;
 }
+
+
+
 
 - (YLTextFeildTableViewCell *)createRegular {
     YLTextFeildTableViewCell *cell = [YLTextFeildTableViewCell new];
@@ -212,6 +223,8 @@ static NSString *const kYLHongBaoEnableNotification = @"com.yohunl.kYLHongbaoEna
     [cell.textField addTarget:self action:@selector(regularCellFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     return cell;
 }
+
+
 
 - (YLTextFeildTableViewCell *)createNameRegular {
     YLTextFeildTableViewCell *cell = [YLTextFeildTableViewCell new];
@@ -323,6 +336,10 @@ static NSString *const kYLHongBaoEnableNotification = @"com.yohunl.kYLHongbaoEna
     [self synchronousConfig];
 }
 
+
+
+
+
 - (void)regularCellFieldDidChange:(UITextField *)textField {
     self.redEnvelopConfig.regularText = textField.text;
     [self synchronousConfig];
@@ -332,6 +349,7 @@ static NSString *const kYLHongBaoEnableNotification = @"com.yohunl.kYLHongbaoEna
     self.redEnvelopConfig.nameregularText = textField.text;
     [self synchronousConfig];
 }
+
 
 
 
