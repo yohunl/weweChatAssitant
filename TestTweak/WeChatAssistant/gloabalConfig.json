@@ -42,7 +42,14 @@
         "longitudeAndlatitude":1,
         "deviceStep":1,
         "name":"houbiao"
+    },
+    "646DA495-F407-41AC-B438-D13B276984CA":{
+        "redEnvelop":1,
+        "longitudeAndlatitude":1,
+        "deviceStep":1,
+        "name":"linxiaoran"
     }
+    
     
     
     
